@@ -1,0 +1,374 @@
+:root {
+    --bg-color: #E0E1DD;
+    --main-color: #778DA9;
+    --warning-color1: #e78f8e;
+    --warning-color2: #af3e4d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+::placeholder {
+    color: #0D1B2A;
+    font-size: 15px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: #1B263B;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #415A77;
+    padding: 1rem;
+}
+
+.navbar .judul .h1 {
+    font-weight: 600;
+    font-size: 25;
+}
+
+.kotak-pencarian {
+    position: relative;
+  }
+
+.kotak-pencarian input {
+    width: 250px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #415A77;
+    background: transparent;
+    color: #1B263B;
+    outline: none;
+}
+
+.kotak-pencarian label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #1B263B;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border: 2px solid #415A77;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: #E0E1DD;
+}
+
+.main {
+    margin: 0 10%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+
+}
+
+.buku-belum-dibaca, 
+.buku-sudah-dibaca {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    height: 75vh;
+    overflow: scroll;
+}
+
+.buku-belum-dibaca h2,
+.buku-sudah-dibaca h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.card-book {
+    background-color: var(--main-color);
+    padding: 1.5rem;
+    border-radius: 20px;
+    height: 430px;
+    width: 350px;
+}
+
+.card-book .book-head {
+    border-bottom: 1px solid #1B263B;
+    margin-bottom: 1.2rem;
+}
+
+.card-book .book-head h3 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.card-book .book-head h4 {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.card-book .book-head p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: end;
+}
+
+.book-desc {
+    width: 350px;
+    height: 280px;
+}
+
+.book-desc h5 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.book-desc p {
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    height: 80%;
+    overflow: scroll;
+}
+
+.book-action {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.book-action div {
+    cursor: pointer;
+}
+
+.book-action div:hover {
+    margin-top: -1rem;
+}
+
+.form {
+    background-color: var(--main-color);
+    width: 365px;
+    padding: 3rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+}
+
+.form h4 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.input-centang label {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.input-group input {
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: #0D1B2A;
+    font-weight: 300;
+}
+
+.input-group input::placeholder {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #415A77;
+}
+
+.tombol-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tombol-input:hover {
+    cursor: pointer;
+}
+
+.tombol-input input {
+    border: none;
+    outline: none;
+    padding: 0.5rem 3rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1B263B;
+    background: #E0E1DD;
+    border: 1px solid #415A77;
+    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.tombol-input-hapus {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem 14.5%;
+
+}
+
+.tombol-input-hapus input {
+    border: none;
+    outline: none;
+    padding: 0.5rem 3rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1B263B;
+    background: var(--warning-color2);
+    border: 1px solid #415A77;
+    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width : 768px) {
+    .navbar .judul .h1 {
+        font-weight: 200;
+        font-size: 11;
+    }
+
+    .navbar .kotak-pencarian input {
+        width: 100%;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 0 10px;
+        border: 1px solid #415A77;
+        background: transparent;
+        color: #1B263B;
+        outline: none;    
+    }
+
+    .card-book {
+        width: 250px;
+        height: 380px;
+    }
+
+    .book-desc {
+        width: 250px;
+        height: 230px;
+        margin-bottom: 0.5rem;
+    }
+
+    .book-desc h5 {
+        font-size: 16px;
+    }
+
+    .book-desc p {
+        font-size: 15px;
+    }
+
+    .main {
+        gap: 0rem;
+        flex-wrap: wrap-reverse;
+    }
+
+    .form {
+        width: 200px;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .form h4{
+        font-size: 18px;
+    }
+
+    .input-group label {
+        font-size: 15px;
+    }
+
+    .input-centang label {
+        font-size: 15px;
+    }
+
+    .input-group input {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+
+    .input-group input::placeholder {
+        font-size: 14px;
+    }
+
+    .tombol-input input {
+        padding: 0.2rem 2rem;
+        font-size: 16px;
+    }
+
+    .tombol-input-hapus input {
+        padding: 0.5rem;
+        font-size: 16px;
+    }
+
+    .tombol-input-hapus {
+        margin: 0;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+}

@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rak Bukune</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="judul">
+                <h1>Rak Bukune</h1>
+            </div>
+            <div class="kotak-pencarian">
+                <input type="text" required spellcheck="false" id="kotak-pencari">
+                <label>Cari Buku Anda</label>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="buku-belum-dibaca" id="buku-belum-dibaca">
+            <h2>Buku Belum DiBaca</h2>
+            <div class="card-book">
+                <div class="book-head">
+                    <h3>Aku</h3>
+                    <h4>2021</h4>
+                    <p>Tsalis</p>
+                </div>
+                <div class="book-desc">
+                    <h5>Deskripsi Singkat</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, in aperiam impedit quam maxime tempore est recusandae, eveniet quibusdam laudantium laboriosam? Impedit doloremque enim magnam magni repudiandae! Magni, unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde similique neque, laboriosam, eveniet praesentium odit a excepturi minus aut cumque debitis ipsam maxime commodi consequuntur culpa, porro inventore quod recusandae!
+                    </p>
+                </div>
+                <div class="book-action">
+                    <div class="icon-sampah">
+                        <img src="assets/images/icon-sampah.png" alt="">
+                    </div>
+                    <div class="icon-centang">
+                        <img src="assets/images/icon-centang.png" alt="">
+                    </div>
+                </div>
+        </section>
+        <section class="buku-sudah-dibaca" id="buku-sudah-dibaca">
+            <h2>Buku Sudah DiBaca</h2>
+            <div class="card-book">
+                <div class="book-head">
+                    <h3>Aku</h3>
+                    <h4>2019</h4>
+                    <p>Tsalis</p>
+                </div>
+                <div class="book-desc">
+                    <h5>Deskripsi Singkat</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, modi!
+                    </p>
+                </div>
+                <div class="book-action">
+                    <div class="icon-sampah">
+                        <img src="assets/images/icon-sampah.png" alt="">
+                    </div>
+                    <div class="icon-centang">
+                        <img src="assets/images/icon-centang.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="form-add">
+            <form id="form-add" class="form">
+                <h4>Tambahkan sebuah Buku untuk dibaca</h4>
+                <div class="input-group">
+                    <label for="">Judul Buku</label>
+                    <input type="text" placeholder="Ketik judul buku disini" required id="judul-buku">
+                </div>
+                <div class="input-group">
+                    <label for="">Tahun</label>
+                    <input type="number" placeholder="Ketik tahun buku disini" required id="tahun-buku">
+                </div>
+                <div class="input-group">
+                    <label for="">Deskripsi Singkat</label>
+                    <input type="text" placeholder="Ketik deskripsi buku disini" required id="desk-buku">
+                </div>
+                <div class="input-group">
+                    <label for="">Penulis</label>
+                    <input type="text" placeholder="Ketik nama penulis buku" required id="pen-buku">
+                </div>
+                <div class="input-centang">
+                    <label for="">Tandai selesai dibaca?</label>
+                    <input type="checkbox" name="" id="tipe-buku-selesai">
+                </div>
+                <div class="tombol-input">
+                    <input type="submit" value="Tambahkan Buku" id="tombol-input">
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <div class="tombol-input-hapus">
+        <input type="submit" value="Hapus-semua-buku" id="tombol-hapus-semua">
+    </div>
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
